@@ -7,7 +7,7 @@ data.each do |key, value|
         empty_hash[name] = {}
       end
         
-      if empty_hash != empty_hash[name][key]
+      if !empty_hash[name][key]
         empty_hash[name][key] = []
       end
         
